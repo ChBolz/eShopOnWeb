@@ -1,11 +1,11 @@
 name: DevSecOps - Snyk SAST
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
     branches: [ main ]
-
+  push:
+    branches: [ main ]
+    
 jobs:
   snyk-sast:
     runs-on: ubuntu-latest
